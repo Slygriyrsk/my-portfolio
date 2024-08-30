@@ -1,0 +1,130 @@
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+ 
+  animation: float 3s ease-in-out infinite;
+ 
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+}
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+.skillItem:hover {
+  transform: translateZ(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-color: var(--border-color, #000);
+  cursor: pointer;
+}
+
+
+.skillItem i {
+  font-size: 34px;
+  font-family: 'Roboto Mono', monospace;
+  color: var(--icon-color, #000);
+}
+
+
+.skillItem span {
+  font-weight: normal;
+  color: var(--text-color, #000);
+}
+
+
+.html {
+  --icon-color: #E34F26;
+  --text-color: #E34F26;
+  --border-color: #E34F26;
+}
+
+.css {
+  --icon-color: #1572B6;
+  --text-color: #1572B6;
+  --border-color: #1572B6;
+}
+
+.javascript {
+  --icon-color: #F7DF1E;
+  --text-color: #F7DF1E;
+  --border-color: #F7DF1E;
+}
+
+.nodejs {
+  --icon-color: #8CC84B;
+  --text-color: #8CC84B;
+  --border-color: #8CC84B;
+}
+
+.mongodb {
+  --icon-color: #4DB33D;
+  --text-color: #4DB33D;
+  --border-color: #4DB33D;
+}
+
+.react {
+  --icon-color: #61DBFB;
+  --text-color: #61DBFB;
+  --border-color: #61DBFB;
+}
+
+.cplusplus {
+  --icon-color: #00599C;
+  --text-color: #00599C;
+  --border-color: #00599C;
+}
+
+.python {
+  --icon-color: #3776AB;
+  --text-color: #3776AB;
+  --border-color: #3776AB;
+}
+
+.tailwindcss {
+  --icon-color: #06B6D4;
+  --text-color: #06B6D4;
+  --border-color: #06B6D4;
+}
+
+.sql {
+  --icon-color: #003B57;
+  --text-color: #003B57;
+  --border-color: #003B57;
+}
+
+.networking {
+  --icon-color: #F8C146;
+  --text-color: #F8C146;
+  --border-color: #F8C146;
+}
+
+.git {
+  --icon-color: #F05032;
+  --text-color: #F05032;
+  --border-color: #F05032;
+}
+
+.vite {
+  --icon-color: #646CFF;
+  --text-color: #646CFF;
+  --border-color: #646CFF;
+}
+
+.bootstrap {
+  --icon-color: #563D7C;
+  --text-color: #563D7C;
+  --border-color: #563D7C;
+}

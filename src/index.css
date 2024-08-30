@@ -1,0 +1,18 @@
+/* styles.css */
+:root {
+    --text-color-light: #000000;
+    --text-color-dark: #ffffff;
+    --icon-color-light: #4e4e4e;
+    --icon-color-dark: #cccccc;
+  }
+  
+  [data-theme='light'] {
+    --text-color: var(--text-color-light);
+    --icon-color: var(--icon-color-light);
+  }
+  
+  [data-theme='dark'] {
+    --text-color: var(--text-color-dark);
+    --icon-color: var(--icon-color-dark);
+  }
+  
