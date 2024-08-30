@@ -8,7 +8,7 @@ Welcome to my personal portfolio website! This project is designed to showcase m
 
 Understanding the project structure is crucial for navigating and contributing to the project. Here's a breakdown:
 
-```bash
+    ```bash
 
     my-portfolio/
     │
@@ -30,7 +30,7 @@ Understanding the project structure is crucial for navigating and contributing t
     │   │   └── contact/        # Contact form section with EmailJS integration
     │   └── App.jsx                 # Main application component
     └── package.json                # Project dependencies and scripts
-```
+    ```
 
 ### 📂 Detailed Folder Explanation
 
@@ -61,18 +61,18 @@ To set up the project locally, follow these steps:
 
 Start by cloning the repository to your local machine:
 
-```bash
+    ```bash
     git clone https://github.com/Slygriyrsk/my-portfolio.git
     cd my-portfolio
-```
+    ```
 
 ### 2\. Install Dependencies
 
 Next, install the necessary dependencies using npm:
 
-```bash
+    ```bash
     npm install
-```
+    ```
 
 ### 3\. Configure Environment Variables
 
@@ -91,9 +91,9 @@ Make sure to replace `your_service_id`, `your_template_id`, and `your_user_id` w
 
 To see the website in action, start the development server:
 
-```bash
+    ```bash
     npm run dev
-```
+    ```
 
 Your portfolio should now be running at `http://localhost:5173`.
 
@@ -101,7 +101,7 @@ Your portfolio should now be running at `http://localhost:5173`.
 
 The contact form in this portfolio is powered by **EmailJS**, allowing visitors to send messages directly to your email without exposing your email address. Here's how it's implemented in `contact.jsx`:
 
-```jsx
+    ```jsx
 
     import React, { useRef } from 'react';
     import emailjs from 'emailjs-com';
@@ -138,7 +138,7 @@ The contact form in this portfolio is powered by **EmailJS**, allowing visitors 
     };
 
     export default Contact;
-```
+    ```
 
 ### How It Works:
 
@@ -150,7 +150,7 @@ The contact form in this portfolio is powered by **EmailJS**, allowing visitors 
 
 To create a dynamic and engaging user experience, **GSAP** animations are used in the profile section. Here's an example of how you can animate elements:
 
-```jsx
+    ```jsx
     import React, { useEffect, useRef } from 'react';
     import gsap from 'gsap';
 
@@ -170,7 +170,7 @@ To create a dynamic and engaging user experience, **GSAP** animations are used i
     };
 
     export default Profile;
-```
+    ```
 
 ### Animation Breakdown:
 
@@ -182,7 +182,7 @@ To create a dynamic and engaging user experience, **GSAP** animations are used i
 
 Your resume is stored in the `assets` folder and can be easily linked or displayed in your portfolio. Here's how you can import and link it:
 
-```jsx
+    ```jsx
     import React from 'react';
     import myResume from '../assets/resume.pdf';
 
@@ -195,7 +195,7 @@ Your resume is stored in the `assets` folder and can be easily linked or display
     };
 
     export default Resume;
-```
+    ```
 
 This allows visitors to download your resume directly from your portfolio website.
 
@@ -207,9 +207,9 @@ Your portfolio is deployed using **Netlify**, which provides seamless deployment
 
 Before deploying, make sure to create a production build of your project:
 
-```bash
+    ```bash
     npm run build
-```
+    ```
 
 This command generates an optimized and minified version of your site in the `dist/` folder.
 
@@ -231,18 +231,18 @@ Netlify automatically redeploys your site whenever you push changes to the conne
 
 To run the project in a development environment, execute:
 
-```bash
+    ```bash
     npm run dev
-```
+    ```
 
 This will start the development server, and your application will be available at `http://localhost:5173`.
 
 For a production build:
 
-```bash
+    ```bash
     npm run build
     npm run serve
-```
+    ```
 
 This will build the project for production and you can directly open your dist folder in file explorer and import it from there in netifly it will automatically create a domain for your webpage.
 
