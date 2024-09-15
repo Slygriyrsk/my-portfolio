@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import styles from './ProjectsStyles.module.css';
-import blog from '../../assets/blog.jpg';
+import blog from '../../assets/blog.png';
 import apple from '../../assets/apple.png';
-import keeper from '../../assets/keeper.png';
+import weather from '../../assets/weather.png';
 import sabot from '../../assets/sabot.png';
 import ProjectCard from '../../common/ProjectCard';
 
@@ -62,10 +62,10 @@ function Projects() {
         />
         <ProjectCard
           className="projectCard"
-          src={keeper}
-          link="https://github.com/Slygriyrsk/keeper-app-react"
-          h3="Keeper-APP"
-          p="Keep Your Notes"
+          src={weather}
+          link="https://github.com/Slygriyrsk/my-weather-app"
+          h3="Weather-APP"
+          p="Weather-Forecast"
         />
         <ProjectCard
           className="projectCard"
